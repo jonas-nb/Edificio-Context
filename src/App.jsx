@@ -1,12 +1,15 @@
-import State from "./State";
-import TreinoBg from "./TreinoBg";
+import { GlobalStorage } from "./Context/Context";
+import Painel from "./Painel";
+import Predio from "./Predio";
 
 function App() {
   return (
-    <div className="App">
-      <TreinoBg />
-      <State />
-    </div>
+    <GlobalStorage>
+      <div className="flex items-center justify-around w-full h-full border">
+        <Predio />
+        <Painel />
+      </div>
+    </GlobalStorage>
   );
 }
 
