@@ -45,7 +45,7 @@ const NomePredio = () => {
          style={
             textoPainelState === true ? { backgroundColor: painelColor } : {}
          }
-         className="w-full h-20 flex items-center justify-center text-2xl "
+         className="w-full h-20 flex flex-col items-center justify-center text-2xl "
       >
          <h1
             className={
@@ -56,6 +56,17 @@ const NomePredio = () => {
          >
             Edifício Context
          </h1>
+         <p>
+            <small
+               className={
+                  textoPainelState === true
+                     ? 'text-sm text-[#ffc600] font-extrabold'
+                     : 'text-sm '
+               }
+            >
+               create with love by Jonas Batista
+            </small>
+         </p>
       </div>
    );
 };
