@@ -12,7 +12,8 @@ export const GlobalStorage = ({ children }) => {
   const [luz7, setLuz7] = useState(false);
   const [luz8, setLuz8] = useState(false);
   const [luz9, setLuz9] = useState(false);
-  const [textoPainel, setTextoPainel] = useState(false);
+  const [textoPainelState, setTextoPainelState] = useState(false);
+
   return (
     <UserContext.Provider
       value={{
@@ -25,9 +26,9 @@ export const GlobalStorage = ({ children }) => {
         luz7,
         luz8,
         luz9,
-        textoPainel,
+        textoPainelState,
 
-        setTextoPainel,
+        setTextoPainelState,
         setLuz1,
         setLuz2,
         setLuz3,
