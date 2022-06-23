@@ -1,4 +1,4 @@
-import { useContext, useState, useEffect } from 'react';
+import { useContext } from 'react';
 import { UserContext } from './Context/Context';
 import NomePredio from './NomePredio';
 

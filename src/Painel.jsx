@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import { UserContext } from './Context/Context';
 
 const Painel = () => {
@@ -24,7 +24,7 @@ const Painel = () => {
       setLuz8,
       setLuz9,
    } = useContext(UserContext);
-   console.log('Sou eu negro lindo');
+
    return (
       <div className="w-96 h-72  bg-black/30 shadow-md shadow-black border">
          <h1 className="bg-black text-white text-center flex items-center justify-center mt-2 mb-3 border rounded w-6/12 h-10 m-auto">
